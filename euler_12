@@ -1,0 +1,16 @@
+def tri(n):
+    return n*(n+1)/2
+n=1
+
+while True:
+    count=0
+    y=tri(n)
+    for x in range (2,(n/2)+1):
+        if y%x==0:
+            count+=1
+    if count>=500:
+        break
+    print y
+    print count
+    n+=1
+print tri(n)
